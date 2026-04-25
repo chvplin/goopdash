@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@colyseus/schema": "^3.0.35",
-    "@loot-rush/shared": "workspace:*",
+    "@loot-rush/shared": "file:../../packages/shared",
     "@supabase/supabase-js": "^2.49.8",
     "colyseus": "^0.16.4",
     "express": "^4.21.2",
