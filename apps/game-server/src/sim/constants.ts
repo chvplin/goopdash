@@ -1,0 +1,10 @@
+export const MATCH_DURATION_MS = 180000;
+export const SERVER_TICK_RATE = 20;
+export const PLAYER_RADIUS = 0.7;
+export const PICKUP_RANGE = 1.8;
+export const BASE_SPEED = 7;
+export const DASH_SPEED = 14;
+export const DASH_DURATION_MS = 220;
+export const DASH_COOLDOWN_MS = 2500;
+export const STUN_MS = 300;
+export const PICKUP_LOCK_MS = 250;
