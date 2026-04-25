@@ -107,7 +107,7 @@ export class LootRushRoom extends Room<MatchState> {
     player.velocity = { x: input.move.x * currentSpeed, y: input.move.y * currentSpeed };
 
     if (input.pickupPressed && !player.carriedLootId) {
-      const loot = Object.values(this.state.lootPool).find(
+      const loot = (Object.values(this.state.lootPool) as Array<MatchState["lootPool"][string]>).find(
         (item) =>
           !item.deposited &&
           !item.carriedByPlayerId &&
@@ -139,7 +139,7 @@ export class LootRushRoom extends Room<MatchState> {
     }
 
     const dt = deltaTime / 1000;
-    const players = Object.values(this.state.players);
+    const players = Object.values(this.state.players) as Array<MatchState["players"][string]>;
 
     for (const player of players) {
       if (player.isDashing && now > player.dashEndsAt) {

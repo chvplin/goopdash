@@ -3,6 +3,6 @@ services:
     name: loot-rush-game-server
     env: node
     plan: starter
-    buildCommand: npm install && npm --prefix packages/shared run build && npm --prefix apps/game-server run build
+    buildCommand: npm --prefix packages/shared install && npm --prefix apps/game-server install && npm --prefix packages/shared run build && npm --prefix apps/game-server run build
     startCommand: npm --prefix apps/game-server run start
     autoDeploy: true
